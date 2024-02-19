@@ -1,0 +1,284 @@
+/* phase 2 css */
+
+.menu-hij{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-left: 15px;
+}
+
+#main-header .site-logo{
+    display: inline-block;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: unset;
+}
+
+.menu-hij li a{
+    margin-right:15px;
+    color: #000;
+    font-weight: lighter;
+    transition:all 0.1s ease-in;
+    transform-origin: 50%;
+
+}
+
+.menu-hij li{
+    width: 65px;
+}
+
+.menu-hij li.active a{
+    font-weight: bolder;
+    color: #000;
+}
+
+#main-header .site-options{
+    width: auto;
+    display: flex;
+}
+
+.location{
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+.flex-wrap-nav{
+    height: 70px
+}
+
+#primary-navigation ul{
+    width: 100%;
+    margin-right: 30px;
+    text-align: left!important
+}
+
+#primary-navigation ul>li>a{
+    padding: 13px 13px 9px;
+}
+
+#primary-navigation ul>li {
+    text-align: left;
+    width: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+#main-header .secondary-nav{
+    position: relative;
+}
+
+.fade.in {opacity: 1;}
+
+.fade{
+    opacity: 0;
+    transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hij-tab-content .tab-pane{
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.hij-tab-content .tab-pane.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.wrap-tab-hij{
+    height: 38px;
+}
+
+.wrap-tab-hij .tab-content>.tab-pane{
+    display: none;
+    opacity: 0;
+    /* position: absolute; */
+    transition: all 0.2s ease-out 1s;
+    z-index: -2;
+    height: 100%;
+}
+
+.wrap-tab-hij .tab-content>.tab-pane ul,.wrap-tab-hij .tab-content>.tab-pane ul li a{
+    height: 100%;
+}
+
+.wrap-tab-hij .tab-content>.tab-pane.active{
+    visibility: visible;
+    opacity: 1!important;
+    transition-delay: 0.1s;
+    z-index: 1;
+}
+
+.wrap-tab-hij .tab-content>.tab-pane.active.on{
+    display: block;
+    transition-delay: 0s;
+    
+}
+
+.justify-content-between{
+    justify-content: space-between
+}
+
+.wrap-tab-hij .tab-content{
+    float: left;
+    height: 100%;
+}
+
+.wrap-tab-hij .search{
+    float: right;
+}
+
+li.cart-trigger {
+    display: flex;
+    line-height: 1;
+}
+
+li.cart-trigger a.cartIcon{
+    border-right: none!important;
+    padding-right: 5px!important;
+}
+
+.align-center{
+    align-items: center;
+}
+
+#main-header .site-options{
+    margin-top: 0;
+}
+
+#main-header .secondary-nav{
+    padding-top: 0;
+}
+
+#primary-navigation .search-text {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 30px;
+    height: 29px;
+    font-size: 1.2rem;
+    font-family: "Proxima Nova Rg", serif;
+    font-weight: 700;
+    color: #454545;
+    border: none;
+}
+
+#primary-navigation .form-group span.search-btn {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    border: 0;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+
+#primary-navigation .form-group span.search-btn img{
+    vertical-align: unset;
+}
+
+#primary-navigation .form-group .submit-btn {
+    position: absolute;
+    left: 0px;
+    top: -8px;
+    border: 0;
+    width: 29px;
+    height: 35px;
+    padding: 0 10px;
+    background: none;
+    opacity: 0;
+}
+
+#main-header .site-options .form-group{
+    display: block;
+    width: 90px;
+    margin-left: 10px;
+}
+
+.lang-se{
+    width: 36px!important;
+    border-right: 1px solid #CCC;
+
+}
+
+.lang-se a{
+    color: #000;
+
+}
+
+#main-header .site-options .form-group div.selector{
+    padding-left: 0;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.primary-header.fixed-header #main-header .site-logo img {
+    width: 60%;
+}
+
+.img-logo-wrap h2 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.product-sub-banner {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50%;
+    margin-bottom: 20px;
+}
+
+.content-product p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.SearchByHeadding{
+    text-align: center;
+    padding-top: 15px;
+    display: table;
+    margin: 0 auto;
+    background: #FFF;
+    position: relative;
+}
+
+.SearchByHeadding:before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 200px;
+    background: #CCC;
+    left: -220px;
+    bottom: 20%;
+    opacity: 0.5;
+    
+}
+
+.SearchByHeadding:after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 200px;
+    background: #CCC;
+    right: -220px;
+    bottom: 20%;
+    opacity: 0.5;
+    
+}
+
+.SearchByHeadding strong{
+    color: #c29e53;
+    text-transform: uppercase;
+}
+
+ul.product-detail-spec-list h2 a {
+    color: #000;
+}
